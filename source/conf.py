@@ -15,6 +15,7 @@ import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+import doctr_versions_menu
 
 # -- Project information -----------------------------------------------------
 repo_slug = os.environ.get("TRAVIS_REPO_SLUG")
