@@ -34,6 +34,7 @@ author = 'SLAC National Accelerator Laboratory'
 # ones.
 extensions = [
     'recommonmark',
+    'doctr_versions_menu',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
