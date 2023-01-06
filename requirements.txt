@@ -1,3 +1,8 @@
-sphinx_rtd_theme
-sphinx
+docs-versions-menu
+git+https://github.com/pcdshub/ads-deploy/@master
 recommonmark
+sphinx
+sphinx_rtd_theme
+sphinxcontrib-jquery
+# packaging 22.0 breaks some builds by removing LegacyVersion.
+packaging==21.3
