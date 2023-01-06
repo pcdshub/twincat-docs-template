@@ -32,3 +32,20 @@ $ git commit -am "DOC: install documentation template as a submodule"
 $ cd docs/
 $ make html
 ```
+
+### Templates
+
+Templates are vendored from ads-deploy in this repository in ``templates/``.
+
+These are in Jinja2-compatible markdown syntax and are interpolated by
+``ads-deploy docs`` (``pytmc template``).
+
+Filenames may contain Jinja syntax well, making an easy way for multiple
+projects/PLCs/etc to be contained in the same documentation repository.
+
+Details on available filters and variables may be found in
+``ads-deploy`` and ``pytmc``:
+
+1. [ads-deploy docs](https://github.com/pcdshub/ads-deploy/blob/master/ads_deploy/docs.py)
+2. [pytmc template](https://github.com/pcdshub/pytmc/blob/master/pytmc/bin/template.py)
+2. [pytmc parser](https://github.com/pcdshub/pytmc/blob/master/pytmc/parser.py)

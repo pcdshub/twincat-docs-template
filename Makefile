@@ -4,10 +4,12 @@
 # You can set these variables from the command line, and also
 # from the environment for the first two.
 TWINCAT_PROJECT_ROOT ?= ..
-SPHINXOPTS    ?=
-SPHINXBUILD   ?= sphinx-build
-SOURCEDIR     = source
-BUILDDIR      = build
+TEMPLATE_NAMES ?= $(wildcard $(PWD)/templates/*.rst)
+TEMPLATES      ?= $(addprefix --template ,$(TEMPLATE_NAMES))
+SPHINXOPTS     ?=
+SPHINXBUILD    ?= sphinx-build
+SOURCEDIR      = source
+BUILDDIR       = build
 
 html: generate
 
@@ -17,7 +19,7 @@ generate:
 		python -m pip install -r requirements.txt; \
 	fi
 	find "$(TWINCAT_PROJECT_ROOT)" -type f -iname "*.sln" -print0 \
-		| xargs -0 -n1 python -m ads_deploy docs --output "./source"
+		| xargs -0 -n1 python -m ads_deploy docs $(TEMPLATES) --output "./source"
 
 # Put it first so that "make" without argument is like "make help".
 help:
