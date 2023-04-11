@@ -9,6 +9,7 @@
 
     {{ tsproj.name }}_pragmas
     {{ tsproj.name }}_nc
+    {{ tsproj.name }}_ethercat
     {{ tsproj.name }}_boxes
     {{ tsproj.name }}_links
 
