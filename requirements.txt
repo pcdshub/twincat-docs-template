@@ -1,5 +1,6 @@
 docs-versions-menu
 git+https://github.com/pcdshub/ads-deploy/@master
+pytmc >=2.15.0
 recommonmark
 sphinx
 sphinx_rtd_theme
