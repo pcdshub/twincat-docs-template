@@ -1,8 +1,7 @@
 docs-versions-menu
 git+https://github.com/pcdshub/ads-deploy/@master
+pytmc >=2.15.0
 recommonmark
 sphinx
 sphinx_rtd_theme
 sphinxcontrib-jquery
-# packaging 22.0 breaks some builds by removing LegacyVersion.
-packaging==21.3
