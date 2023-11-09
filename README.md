@@ -49,3 +49,10 @@ Details on available filters and variables may be found in
 1. [ads-deploy docs](https://github.com/pcdshub/ads-deploy/blob/master/ads_deploy/docs.py)
 2. [pytmc template](https://github.com/pcdshub/pytmc/blob/master/pytmc/bin/template.py)
 2. [pytmc parser](https://github.com/pcdshub/pytmc/blob/master/pytmc/parser.py)
+
+
+## Example
+
+Examples of documentation generated from this repository:
+1. [lcls-plc-rixs-optics](https://pcdshub.github.io/lcls-plc-rixs-optics), a PLC project
+2. [lcls-twincat-general](https://pcdshub.github.io/lcls-twincat-general/), a PLC library
