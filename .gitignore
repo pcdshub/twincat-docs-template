@@ -1,0 +1,10 @@
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+
+# docs build
+source/*.rst
+build
+
+# python
+__pycache__
