@@ -20,7 +20,7 @@ html: generate
 
 generate:
 	@command -v ads-deploy > /dev/null 2>&1 || { echo "ads-deploy is required, did you use 'pixi run make html'?"; exit 1; }
-	find "$(TWINCAT_PROJECT_ROOT)" -type f -iname "*.sln" -print0 \
+	find "$(TWINCAT_PROJECT_ROOT)" -name *.pixi* -prune -o -type f -iname "*.sln" -print0 \
 		| xargs -0 -n1 python -m ads_deploy docs $(TEMPLATES) --output "./source"
 
 clean:
